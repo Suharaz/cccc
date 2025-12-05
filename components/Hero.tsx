@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import img0 from '../images/home/8e5188ed-d142-4dc4-b7e1-e1e9e8527c03.jpg';
 import img1 from '../images/home/z7284653133829_68e1bbf3517c5a1652411249a583fd69.jpg';
 import img2 from '../images/home/z7291912032050_97e0bc5774448b56aaa41517fe0dadd5.jpg';
 import img3 from '../images/home/z7291912035460_15b20dc32b883fcff0739b51bc14fda1.jpg';
@@ -31,6 +32,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
   // Local hero image slider
   const heroImages = [
+    { src: img0, alt: 'Premium charcoal briquettes ready for export' },
     { src: img1, alt: 'Natural wood charcoal production' },
     { src: img2, alt: 'Premium charcoal ready for export' },
     { src: img3, alt: 'Charcoal loading at international port' },
@@ -44,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
     if (heroImages.length <= 1) return;
     const id = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 1500);
+    }, 3500);
     return () => clearInterval(id);
   }, [heroImages.length]);
 

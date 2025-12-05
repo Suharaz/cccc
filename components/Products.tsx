@@ -30,10 +30,10 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
 
   const products: Product[] = [
     {
-      title: "Premium Charcoal Briquettes",
+      title: "Saw dust briquettes",
       tag: "Briquettes",
       isFeatured: true,
-      category: "Black Charcoal",
+      category: "Saw dust briquettes",
       image: imgSawDust,
       desc: "High-density hexagonal briquettes with 4+ hour burn time",
       specs: ["Moisture: < 5%", "Ash content: < 3%", "Calorific value: 7,500 kcal/kg"],
@@ -41,7 +41,7 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
       moq: "1 container (20 tons)"
     },
     {
-      title: "Natural Lump Charcoal",
+      title: "Longan black charcoal",
       tag: "Lump",
       isFeatured: true,
       category: "Black Charcoal",
@@ -52,17 +52,7 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
       moq: "500 kg"
     },
     {
-      title: "Eco BBQ Briquettes",
-      tag: "Eco",
-      category: "Saw dust briquettes",
-      image: imgSawDust,
-      desc: "Sustainable coconut shell briquettes with minimal smoke",
-      specs: ["Moisture: < 7%", "Ash content: < 4%", "No chemical additives"],
-      pkg: "3kg retail box, 10kg bulk bag",
-      moq: "200 kg"
-    },
-    {
-      title: "Restaurant Grade Charcoal",
+      title: "Eucalyptus black charcoal",
       tag: "Lump",
       category: "Black Charcoal",
       image: imgEucalyptusBlack,
@@ -72,9 +62,9 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
       moq: "1 ton"
     },
     {
-      title: "Shisha Charcoal Cubes",
+      title: "Apricot tree white charcoal",
       tag: "Briquettes",
-      category: "Saw dust briquettes",
+      category: "White Charcoal",
       image: imgApricotWhite,
       desc: "Quick-light coconut shell cubes for hookah lounges",
       specs: ["Moisture: < 6%", "Ash content: < 5%", "Burn time: 60+ minutes"],
@@ -82,14 +72,24 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
       moq: "100 kg"
     },
     {
-      title: "Hardwood Charcoal Chunks",
+      title: "Eucalyptus white charcoal",
       tag: "Lump",
-      category: "Black Charcoal",
+      category: "White Charcoal",
       image: imgEucalyptusWhite,
       desc: "Mixed hardwood charcoal for authentic BBQ flavor",
       specs: ["Moisture: < 7%", "Fixed carbon: > 75%", "Burn time: 2-3 hours"],
       pkg: "8kg bags, palletized",
       moq: "500 kg"
+    },
+    {
+      title: "Orange white charcoal",
+      tag: "Lump",
+      category: "White Charcoal",
+      image: imgOrangeWhite,
+      desc: "Premium white charcoal from orange wood with high heat output",
+      specs: ["Moisture: < 2%", "Ash content: < 2.5%", "Calorific value: > 7800 kcal/kg"],
+      pkg: "According to customer requirements",
+      moq: "1 container (~ 13 tons)"
     }
   ];
 
