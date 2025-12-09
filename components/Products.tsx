@@ -133,18 +133,6 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
               
               {/* Image Area */}
               <div className="bg-zinc-900 h-64 flex items-center justify-center relative border-b border-zinc-800 group-hover:bg-zinc-800/80 transition-colors overflow-hidden">
-                 {/* Featured Badge */}
-                 {product.isFeatured && (
-                  <span className="absolute top-4 right-4 bg-amber-600/90 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                    Featured
-                  </span>
-                )}
-                
-                {/* Tag Badge */}
-                <span className="absolute top-4 left-4 bg-zinc-800/90 text-zinc-300 border border-zinc-700 text-xs font-bold px-3 py-1 rounded-full z-10">
-                    {product.tag}
-                </span>
-
                 <img
                   src={product.image}
                   alt={product.title}
