@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Leaf, Package, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import imgApricotWhite from '../images/products/Apricot tree white charcoal.jpg';
 import imgEucalyptusBlack from '../images/products/Eucalyptus black charcoal.jpg';
 import imgEucalyptusWhite from '../images/products/Eucalyptus white charcoal.jpeg';
@@ -154,36 +154,7 @@ const Products: React.FC<ProductsProps> = ({ onContactClick }) => {
 
               {/* Content */}
               <div className="p-8 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-3">{product.title}</h3>
-                <p className="text-zinc-400 text-sm mb-6 min-h-[40px]">{product.desc}</p>
-
-                <div className="space-y-5 flex-1">
-                  <div>
-                    <div className="flex items-center text-emerald-500 mb-2">
-                      <Leaf size={16} className="mr-2" />
-                      <span className="text-xs font-bold uppercase tracking-wide">Specifications:</span>
-                    </div>
-                    <ul className="text-zinc-300 text-sm space-y-1.5 ml-1 pl-4 border-l-2 border-zinc-800">
-                      {product.specs.map((spec, i) => (
-                        <li key={i}>{spec}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center text-emerald-500 mb-2">
-                      <Package size={16} className="mr-2" />
-                      <span className="text-xs font-bold uppercase tracking-wide">Packaging:</span>
-                    </div>
-                    <p className="text-zinc-300 text-sm pl-6">{product.pkg}</p>
-                  </div>
-                </div>
-                
-                <div className="mt-6 pt-4 border-t border-zinc-800 mb-6">
-                     <p className="text-zinc-500 text-xs">
-                      <span className="font-semibold text-zinc-400">MOQ:</span> {product.moq}
-                    </p>
-                </div>
+                <h3 className="text-xl font-bold text-white mb-6">{product.title}</h3>
 
                 {/* Actions */}
                 <div className="mt-auto">
